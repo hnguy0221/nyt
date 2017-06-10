@@ -27,7 +27,7 @@
 			<span class="glyphicon glyphicon-list-alt"></span>
 			<p>Search Parameters</p>
 		</div>
-		<div class="row">
+		<!-- <div class="row">
 				<input id="searchTerm" type="text" placeholder="Tiny Cat" autofocus>
 		</div>
 		<div class="row">
@@ -42,8 +42,30 @@
 		<div class="row">
 			<button id="searchButton">Search</button>
 			<button id="clear">Clear Results</button>
-		</div>
+		</div> -->
 	</div>
+
+	<form id="trainFormEntry">
+            <div class="form-group">
+              <label for="">Search Term:</label>
+              <input type="input" class="form-control" id="searchTerm" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="">Number of Records to Retrieve</label>
+              <input type="input" class="form-control" id="recordQuantity" placeholder="Destination">
+            </div>
+            <div class="form-group">
+              <label for="">Start Year (Optional):</label>
+              <input type="input" class="form-control" id="startYear" placeholder="HH:mm (military time)">
+            </div>
+            <div class="form-group">
+              <label for="">End Year (Optional):</label>
+              <input type="input" class="form-control" id="endYear" placeholder="00:00 minutesAway">
+            </div>
+            <button id="searchButton" type="submit" class="btn btn-default">Search</button>
+            <button id="clear" type="submit" class="btn btn-default">Clear Results</button>
+          </form>
+
 
 	<div id="pulledArticles" class="sections">
 		<div class="article"></div>

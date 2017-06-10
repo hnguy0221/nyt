@@ -22,15 +22,20 @@ function searchArticles() {
     }
   }).done(function(result) {
     console.log(result.response.docs);
-    $(".targetDiv").html(JSON.stringify(result.response.docs));
+    //$(".targetDiv").html(JSON.stringify(result.response.docs));
   }).fail(function(err) {
     throw err;
   });
 }
+
+searchArticles();
+
 function createArticles() {
 }
 
 function clearFormData() {
 }
 
-$(document).on("click", "#searchButton", searchArticles);
+// $("#searchButton").click();
+
+// $(document).on("click", "#searchButton", clearFormData);
