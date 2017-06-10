@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New York Times API</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 head">
+			<span class="glyphicon glyphicon-leaf"></span>
+			<h1>New York Times Search</h1>
+		</div>
+	</div>
+
+	<div class="searchCont sections">
+		<div class="searchParam">
+			<span class="glyphicon glyphicon-list-alt"></span>
+			<p>Search Parameters</p>
+		</div>
+		<div class="row">
+				<input id="searchTerm" type="text" placeholder="Tiny Cat" autofocus>
+		</div>
+		<div class="row">
+				<input id="recordQuantity" type="text" placeholder="5">
+		</div>
+		<div class="row">
+				<input id="startYear" type="text" placeholder="2001">
+		</div>
+		<div class="row">
+				<input id="endYear" type="text" placeholder="2006">
+		</div>
+		<div class="row">
+			<button id="searchButton">Search</button>
+			<button id="clear">Clear Results</button>
+		</div>
+	</div>
+
+	<div id="pulledArticles" class="sections">
+		<div class="article"></div>
+	</div>
+
+</div>
+
+
+<script src="./assets/js/logic.js"></script>	
+</body>
+</html>
